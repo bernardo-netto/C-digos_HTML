@@ -1,0 +1,103 @@
+<!DOCTYPE>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Elementos de Formulário</title>
+</head>
+<body>
+    <!-- <h1> Para criar um título -->
+    <h1>Trabalhando com tags para formulário</h1>
+
+    <!-- <hr> Coloca um risco de ponto a ponto na tela -->
+    <hr>
+    <!-- <p> Para criar um parágrafo -->
+    <p>Elementos para formulário são voltados à interação com o usuário. Entrada de dados, seleção de opções, processamento para manipulação de dados e etc.</p>
+    <!-- <p> Para criar um parágrafo e <b> para deixar em negrito  -->
+    <p>Formulários no HTML são somente uma <b>INTERFACE.</b></p>
+    
+    <p>Para que o formulário funcione, é necessário combiná-lo com alguma <b>linguagem de programação.</b></p>
+
+    <hr>
+
+    <h1>Exemplos</h1>
+    <!-- container para elementos de formulário e preencher com o nome -->
+    <!-- method="get" ele pega e o method="post" ele enviar dados -->
+    <form action="#" method="post">
+        <p>
+            <!-- Rótulo para visualização do usuário -->
+            <!-- <input required> serve para que o usuário não envie o formulário sem algum campo preenchido-->
+            <label for="nome">Nome:</label>
+            <input required type="text" id="nome" name="nome">
+        </p>
+
+        <!-- Rótulo para visualização do usuário e preencher com o email -->
+        <p>
+            <label for="email">Email:</label>
+            <input required type="email" id="email" name="email">
+        </p>
+
+        <!-- Rótulo para usuário visualizar e preencher com o telefone -->
+         <p>
+            <label for="telefone">Telefone:</label>
+            <input required type="tel" id="telefone" name="telefone">
+        </p>
+
+        <!-- Rótulo para usuário visualizar e preencher com o telefone -->
+        <p>
+            <label for="dataNasc">Data de nascimento:</label>
+            <input required type="date" id="dataNasc" name="dataNasc">
+        </p>
+
+        <p>Sexo:</p>
+        <p>
+            <input type="radio" id="feminino" name="sexo">
+            <label for="feminino">Feminino</label>
+        
+            <input type="radio" id="masculino" name="sexo">
+            <label for="masculino">Masculino</label>
+        </p>
+        
+        <!-- <input type="checkbox" Escolher mais de uma opção -->
+        <p>Interesses:</p>
+        <p>
+            <input type="checkbox" id="html5" name="interesses">
+            <label for="html">HTML5</label>
+
+            <input type="checkbox" id="css3" name="interesses">
+            <label for="css3">CSS3</label>
+
+            <input type="checkbox" id="javascript" name="interesses">
+            <label for="">JavaScript</label>
+        </p>
+
+        <p>
+            <label for="for">Qual a sua cor preferida?</label>
+            <input type="color" id="cor" name="cor">
+        </p>
+
+        <p>
+            <label for="idade">Qual a sua idade?</label>
+            <input type="number" id="idade" name="idade">
+        </p>
+
+        <p>
+            <label for="assunto">Assunto:</label>
+            <select name="assunto" id="assunto">
+                <option value="">Escolher</option>
+                <option value="">Elogios</option>
+                <option value="">Reclamações</option>
+                <option value="">Sugestões</option>
+            </select>
+        </p>
+
+        <!-- <textarea> Bloco de notas -->
+        <p>
+            <label for="mensagem">Mensagem</label>
+            <textarea name="mensagem" id="mensagem" cols="20" rows="5"></textarea>
+        </p>
+        
+        <button>Enviar</button>
+
+    </form>
+</body>
+</html>
