@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        a {
+            text-decoration: none; /*Tirar sublinhado*/
+            background-color: cadetblue; /*Cor de fundo*/
+            color: #fff; /*Cor do texto*/
+            padding: 10px; /*Espaçamento sobre o texto*/
+            text-transform: uppercase;/*Deixo em caixa alta*/
+            border-radius: 15px;/*Arredondar bordas*/
+            font-family: cursive; /*Mudar fonta texto do botão*/
+           margin: 30px; /*Levar botão um pouco mais pro centro*/
+        }
+
+        /*Link a ser clicado (colocar em um navegador diferente para testar caso já tenha clicado)*/
+        a:link{
+            color: blueviolet;
+        }
+
+        /*Comportamento do link depois de clicado*/
+        a:visited{
+            background-color: blue;
+        }
+
+        /*Comportamento ao passar o mouse*/
+        a:hover{
+            color: #fff;
+            background-color: black;
+            font-size: 20pt;
+        }
+
+        /*Comportamento de link ativo (clicar e segurar)*/
+        a:active{
+            color: yellow;
+            background-color: red;
+        }
+
+
+
+
+
+
+
+    </style>
+    <title>Pseudo-Classes</title>
+    
+</head>
+<body>
+    <h1>Trabalhando com Pseudo-Classes</h1>
+    <hr>
+    <p>São usadas para definir um elemento com um estado especial</p>
+    <p>Serve para:</p>
+    <ul>
+        <li>Estilizar um elemento quando um usúario passa o mouse sobre ele.</li>
+        <li>Estilizar o link visitado e o não visitado de forma diferente</li>
+        <li>Estilizar um elemento quando ele recebe foco.</li>
+    </ul>
+
+    <p id="botao"><a href="#">Pseudo-classe</a></p>
+    
+</body>
+</html>
